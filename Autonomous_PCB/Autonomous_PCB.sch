@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Driver_Motor:Pololu_Breakout_A4988 A?
+L Driver_Motor:Pololu_Breakout_A4988 A1
 U 1 1 5DA655EE
 P 9600 2300
-F 0 "A?" H 9650 1319 50  0000 C CNN
+F 0 "A1" H 9650 1319 50  0000 C CNN
 F 1 "Pololu_Breakout_A4988" H 9650 1410 50  0000 C CNN
 F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 9875 1550 50  0001 L CNN
 F 3 "https://www.pololu.com/product/2980/pictures" H 9700 2000 50  0001 C CNN
@@ -304,7 +304,7 @@ U 1 1 5DAB329E
 P 5500 3550
 F 0 "TH1" V 5258 3550 50  0000 C CNN
 F 1 "100K" V 5349 3550 50  0000 C CNN
-F 2 "" H 5500 3550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5500 3550 50  0001 C CNN
 F 3 "~" H 5500 3550 50  0001 C CNN
 	1    5500 3550
 	0    1    1    0   
@@ -326,7 +326,7 @@ U 1 1 5DAB849D
 P 9700 3750
 F 0 "J1" H 9850 4100 50  0000 L CNN
 F 1 "HC-05" H 9550 4100 50  0000 L CNN
-F 2 "" H 9700 3750 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Horizontal" H 9700 3750 50  0001 C CNN
 F 3 "~" H 9700 3750 50  0001 C CNN
 	1    9700 3750
 	1    0    0    -1  
@@ -355,7 +355,7 @@ U 1 1 5DABD628
 P 8650 4200
 F 0 "R1" V 8443 4200 50  0000 C CNN
 F 1 "?" V 8534 4200 50  0000 C CNN
-F 2 "" V 8580 4200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8580 4200 50  0001 C CNN
 F 3 "~" H 8650 4200 50  0001 C CNN
 	1    8650 4200
 	0    1    1    0   
@@ -378,10 +378,10 @@ Wire Wire Line
 	8200 4600 8850 4600
 Connection ~ 7800 4200
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5DAC1976
 P 9400 4600
-F 0 "#PWR?" H 9400 4350 50  0001 C CNN
+F 0 "#PWR0101" H 9400 4350 50  0001 C CNN
 F 1 "GND" H 9405 4427 50  0000 C CNN
 F 2 "" H 9400 4600 50  0001 C CNN
 F 3 "" H 9400 4600 50  0001 C CNN
@@ -394,7 +394,7 @@ U 1 1 5DAC3262
 P 9100 4400
 F 0 "R2" H 9170 4446 50  0000 L CNN
 F 1 "?" H 9170 4355 50  0000 L CNN
-F 2 "" V 9030 4400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9030 4400 50  0001 C CNN
 F 3 "~" H 9100 4400 50  0001 C CNN
 	1    9100 4400
 	1    0    0    -1  
@@ -410,7 +410,7 @@ Connection ~ 9100 4600
 Wire Wire Line
 	9100 4600 9400 4600
 Wire Wire Line
-	9500 3750 8850 3750
+	9500 3750 9350 3750
 Wire Wire Line
 	8850 3750 8850 4600
 Connection ~ 8850 4600
@@ -440,7 +440,7 @@ U 1 1 5DAD105D
 P 6100 3850
 F 0 "R3" H 6170 3896 50  0000 L CNN
 F 1 "100K" H 6170 3805 50  0000 L CNN
-F 2 "" V 6030 3850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6030 3850 50  0001 C CNN
 F 3 "~" H 6100 3850 50  0001 C CNN
 	1    6100 3850
 	1    0    0    -1  
@@ -456,12 +456,12 @@ Connection ~ 6100 4200
 Wire Wire Line
 	6100 4200 6800 4200
 $Comp
-L IRF3708PBF:IRF3708PBF Q?
+L IRF3708PBF:IRF3708PBF Q1
 U 1 1 5DAD4E46
 P 9000 1100
-F 0 "Q?" H 9430 1246 50  0000 L CNN
+F 0 "Q1" H 9430 1246 50  0000 L CNN
 F 1 "IRF3708PBF" H 9430 1155 50  0000 L CNN
-F 2 "TO254P469X1042X1967-3P" H 9450 1050 50  0001 L CNN
+F 2 "IRF3708PBF:TO254P469X1042X1967-3P" H 9450 1050 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/IRF3708PBF.pdf" H 9450 950 50  0001 L CNN
 F 4 "IRF3708PBF N-Channel MOSFET, 62 A, 30 V HEXFET, 3-Pin TO-220AB Infineon" H 9450 850 50  0001 L CNN "Description"
 F 5 "4.69" H 9450 750 50  0001 L CNN "Height"
@@ -478,4 +478,188 @@ Wire Wire Line
 	8800 1100 8800 3150
 Wire Wire Line
 	7700 3150 8800 3150
+Wire Wire Line
+	7800 2550 7800 1300
+Wire Wire Line
+	7800 1300 9300 1300
+Connection ~ 7800 2550
+$Comp
+L Mechanical:MountingHole_Pad M1
+U 1 1 5DAA30D8
+P 10700 1850
+F 0 "M1" V 10654 2000 50  0000 L CNN
+F 1 "Motor" V 10745 2000 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 10700 1850 50  0001 C CNN
+F 3 "~" H 10700 1850 50  0001 C CNN
+	1    10700 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10100 2300 10500 2300
+Wire Wire Line
+	10500 2300 10500 2100
+Wire Wire Line
+	10500 2100 10600 2100
+Wire Wire Line
+	10100 2200 10350 2200
+Wire Wire Line
+	10350 2200 10350 1850
+Wire Wire Line
+	10350 1850 10600 1850
+Wire Wire Line
+	10100 2400 10500 2400
+Wire Wire Line
+	10500 2400 10500 2600
+Wire Wire Line
+	10500 2600 10600 2600
+Wire Wire Line
+	10100 2500 10350 2500
+Wire Wire Line
+	10350 2500 10350 2850
+Wire Wire Line
+	10350 2850 10600 2850
+$Comp
+L Mechanical:MountingHole_Pad M2
+U 1 1 5DAAD8B3
+P 10700 2100
+F 0 "M2" V 10654 2250 50  0000 L CNN
+F 1 "Motor" V 10745 2250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 10700 2100 50  0001 C CNN
+F 3 "~" H 10700 2100 50  0001 C CNN
+	1    10700 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad M3
+U 1 1 5DAADB93
+P 10700 2600
+F 0 "M3" V 10654 2750 50  0000 L CNN
+F 1 "Motor" V 10745 2750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 10700 2600 50  0001 C CNN
+F 3 "~" H 10700 2600 50  0001 C CNN
+	1    10700 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad M4
+U 1 1 5DAADF60
+P 10700 2850
+F 0 "M4" V 10654 3000 50  0000 L CNN
+F 1 "Motor" V 10745 3000 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 10700 2850 50  0001 C CNN
+F 3 "~" H 10700 2850 50  0001 C CNN
+	1    10700 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9600 3100 9200 3100
+Wire Wire Line
+	9200 3100 9200 3750
+Connection ~ 9200 3750
+Wire Wire Line
+	9200 3750 8850 3750
+Wire Wire Line
+	9800 3100 9800 3250
+Wire Wire Line
+	9800 3250 9350 3250
+Wire Wire Line
+	9350 3250 9350 3750
+Connection ~ 9350 3750
+Wire Wire Line
+	9350 3750 9200 3750
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5DAB5A90
+P 8400 800
+F 0 "H1" V 8637 803 50  0000 C CNN
+F 1 "Hot End -ve" V 8546 803 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8400 800 50  0001 C CNN
+F 3 "~" H 8400 800 50  0001 C CNN
+	1    8400 800 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8500 800  9200 800 
+Wire Wire Line
+	9200 800  9200 700 
+Wire Wire Line
+	9200 700  9300 700 
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5DAB97DD
+P 10600 600
+F 0 "H2" V 10554 750 50  0000 L CNN
+F 1 "Hot End +ve" V 10645 750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 10600 600 50  0001 C CNN
+F 3 "~" H 10600 600 50  0001 C CNN
+	1    10600 600 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 1300 10000 1300
+Wire Wire Line
+	10950 1300 10950 1450
+Connection ~ 9300 1300
+$Comp
+L power:GND #PWR0102
+U 1 1 5DAC0B3D
+P 10950 1450
+F 0 "#PWR0102" H 10950 1200 50  0001 C CNN
+F 1 "GND" H 10955 1277 50  0000 C CNN
+F 2 "" H 10950 1450 50  0001 C CNN
+F 3 "" H 10950 1450 50  0001 C CNN
+	1    10950 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5DAC7741
+P 10000 1150
+F 0 "C1" H 10115 1196 50  0000 L CNN
+F 1 "CP1" H 10115 1105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 10000 1150 50  0001 C CNN
+F 3 "~" H 10000 1150 50  0001 C CNN
+	1    10000 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1600 9800 600 
+Wire Wire Line
+	9800 600  10000 600 
+Connection ~ 10000 1300
+Wire Wire Line
+	10000 1300 10400 1300
+Wire Wire Line
+	10000 600  10000 1000
+Connection ~ 10000 600 
+Wire Wire Line
+	10000 600  10300 600 
+$Comp
+L Mechanical:MountingHole_Pad PW1
+U 1 1 5DAD498A
+P 10300 700
+F 0 "PW1" H 10200 657 50  0000 R CNN
+F 1 "PSU +ve" H 10200 748 50  0000 R CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 10300 700 50  0001 C CNN
+F 3 "~" H 10300 700 50  0001 C CNN
+	1    10300 700 
+	-1   0    0    1   
+$EndComp
+Connection ~ 10300 600 
+Wire Wire Line
+	10300 600  10500 600 
+$Comp
+L Mechanical:MountingHole_Pad PW2
+U 1 1 5DAD559A
+P 10400 1200
+F 0 "PW2" H 10500 1249 50  0000 L CNN
+F 1 "PSU -ve" H 10500 1158 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 10400 1200 50  0001 C CNN
+F 3 "~" H 10400 1200 50  0001 C CNN
+	1    10400 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 10400 1300
+Wire Wire Line
+	10400 1300 10950 1300
 $EndSCHEMATC
